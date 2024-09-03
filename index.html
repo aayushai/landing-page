@@ -1,51 +1,175 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home Page</title>
+    <title>Document</title>
+    <!-- Link to the external CSS file -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 </head>
+
 <body>
-    <header>
-        <nav>
-            <div class="logo">Name</div>
-            <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#services">Services</a></li>
+    
+<!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="container">
+            <h1 class="logo"><a href="#">One Stop Shop</a></h1>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
-            <a href="#" class="btn">Get Started</a>
-        </nav>
+            <div class="hamburger" id="hamburger">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero" id="hero">
+        <div class="overlay"></div>
+        <div class="hero-content">
+            <h1>All you need</h1>
+            <p>Discover entertainment, songs, books, tools and much more.</p>
+            <button class="cta-button">Get Started</button>
+        </div>
     </header>
 
-    <section class="hero" id="home">
-        <div class="hero-content">
-            <h1>Welcome to Landing Page</h1>
-            <p>Lorem ipsum dolors molestias codfsdfsd rrupti, error molestiae unde Dig</p>
-            <a href="#" class="btn btn-primary">Learn More</a>
+    <!-- Features Section -->
+    <section class="features" id="features">
+        <h2>Why Choose Us?</h2>
+        <div class="feature-grid">
+            <div class="feature">
+                <h3>Feature One</h3>
+                <p>First feature Lorem ipsum dolor sit, amet consectetur Lorem ipsum dolor sit, amet consectetur </p>
+            </div>
+            <div class="feature">
+                <h3>Feature Two</h3>
+                <p>Second feature Lorem ipsum dolor sit, amet consectetur Lorem ipsum dolor sit, amet consectetur  </p>
+            </div>
+            <div class="feature">
+                <h3>Feature Three</h3>
+                <p>Third featureLorem ipsum dolor sit, amet consectetur Lorem ipsum dolor sit, amet consectetur </p>
+            </div>
         </div>
     </section>
 
-    <section class="features" id="services">
-        <h2>Our Services</h2>
-        <div class="feature-cards">
-            <div class="card">
-                <h3>Design</h3>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. A voluptate consequuntur, libero similique totam tempore aliquam dolor nihil enim reprehenderit ex eveniet eum provident? Pariatur distinctio optio dolore ipsam esse?.</p>
+    <!-- Products Section -->
+    <section class="products" id="products">
+        <h2>Our Products</h2>
+        <div class="product-grid">
+            <!-- Game Products -->
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1542751371-adc38448a05e?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Games">
+                <h3>Games</h3>
+                <p>Discover a range of exciting games that will keep you entertained for hours.</p>
+                <button class="buy-button">Buy Now</button>
             </div>
-            <div class="card">
-                <h3>Development</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, quae. Earum, inventore nesciunt excepturi mollitia magni sint itaque! Excepturi, aut harum at accusamus eius doloribus aperiam nulla sequi pariatur iste!.</p>
+            <!-- Entertainment Products -->
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?q=80&w=1548&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Entertainment">
+                <h3>Entertainment</h3>
+                <p>Enjoy a variety of movies, shows, and more with our entertainment packages.</p>
+                <button class="buy-button">Buy Now</button>
             </div>
-            <div class="card">
-                <h3>Marketing</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam amet laudantium modi, tempora quibusdam tempore officia, similique mollitia quisquam totam labore ut suscipit illo. Cupiditate qui dolores distinctio fugiat! Quae?.</p>
+            <!-- Song Products -->
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1470225620780-dba8ba36b745?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Songs">
+                <h3>Top Songs Collection</h3>
+                <p>Listen to the latest and greatest hits from your favorite artists.</p>
+                <button class="buy-button">Buy Now</button>
+            </div>
+            <!-- Book Products -->
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1505063366573-38928ae5567e?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Books">
+                <h3>Books</h3>
+                <p>Explore our collection of bestselling books across various genres.</p>
+                <button class="buy-button">Buy Now</button>
+            </div>
+            <!-- Podcast Products -->
+            <div class="product-card">
+                <img src="https://plus.unsplash.com/premium_photo-1679079455767-1bbb40492d6a?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Podcasts">
+                <h3>Podcasts</h3>
+                <p>Tune in to popular podcasts that cover a wide range of topics.</p>
+                <button class="buy-button">Buy Now</button>
+            </div>
+            <!-- Software Tools -->
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1617777934845-a818fd6e1bcb?q=80&w=1631&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Software Tools">
+                <h3>Software Tools</h3>
+                <p>Find essential software tools that help improve your productivity.</p>
+                <button class="buy-button">Buy Now</button>
+            </div>
+            <!-- E-learning Courses -->
+            <div class="product-card">
+                <img src="https://plus.unsplash.com/premium_photo-1681483495368-2a5ee092c9d4?q=80&w=1465&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="E-learning">
+                <h3>Courses</h3>
+                <p>Enroll in top-rated courses to enhance your skills and knowledge.</p>
+                <button class="buy-button">Buy Now</button>
             </div>
         </div>
     </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials" id="testimonials">
+        <h2>What Our Users Say</h2>
+        <div class="testimonial-grid">
+            <div class="testimonial">
+                <p>"The products are amazing."</p>
+                <span>- xyz</span>
+            </div>
+            <div class="testimonial">
+                <p>"The servises provided by them are amazing."</p>
+                <span>- abcd</span>
+            </div>
+            <div class="testimonial">
+                <p>"Best in the business"</p>
+                <span>- qwert</span>
+            </div>
+        </div>
+    </section>
+
+<!-- Contact Section -->
+    <section class="contact" id="contact">
+        <h2>Contact Us</h2>
+        <form class="contact-form">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <input type="tel" placeholder="Your Phone Number" required>
+            <textarea placeholder="Your Message" required></textarea>
+            <button type="submit" class="submit-button">Submit</button>
+        </form>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer" id="footer">
+        <div class="footer-container">
+            <p>&copy; 2024 One Stop Shop. All rights reserved.</p>
+            <div class="social-icons">
+                <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+        </div>
+    </footer>
+    <!-- JavaScript for mobile menu toggle -->
+    <script>
+        const hamburger = document.getElementById('hamburger');
+        const navLinks = document.getElementById('nav-links');
+
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+            hamburger.classList.toggle('open');
+        });
+    </script>
 </body>
+
 </html>
