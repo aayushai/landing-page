@@ -344,6 +344,7 @@ a {
 
 .footer-links a:hover {
     color: #ff4081;
+    text-decoration: underline;
 }
 
 /* Media Queries for Responsive Design */
@@ -364,6 +365,3 @@ a {
         font-size: 1rem;
     }
 }
-
-
-
