@@ -1,251 +1,450 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <!-- Link to the external CSS file -->
+        <link rel="stylesheet" href="styles.css" />
+        <!-- Google Fonts -->
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.0/css/all.min.css"
+            integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+    </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <!-- Link to the external CSS file -->
-    <link rel="stylesheet" href="styles.css">
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-</head>
-
-<body>
-    
-<!-- Navigation Bar -->
-    <nav class="navbar">
-        <div class="container">
-            <h1 class="logo"><a href="#">One Stop Shop</a></h1>
-            <ul class="nav-links" id="nav-links">
-                <li><a href="#hero">Home</a></li>
-                <li><a href="#features">Features</a></li>
-                <li><a href="#products">Products</a></li>
-                <li><a href="#testimonials">Testimonials</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </div>
-    </nav>
-
-    <!-- Hero Section -->
-    <header class="hero" id="hero">
-        <div class="overlay"></div>
-        <div class="hero-content">
-            <h1>All you need</h1>
-            <p>Discover entertainment, songs, books, tools and much more.</p>
-            <button class="cta-button">Get Started</button>
-        </div>
-    </header>
-
-    <!-- Features Section -->
-    <section class="features" id="features">
-        <h2>Why Choose Us?</h2>
-        <div class="feature-grid">
-            <div class="feature">
-                <h3>Feature One</h3>
-                <p>Discover a shopping experience tailored just for you. With our advanced recommendation engine, get product suggestions based on your preferences and browsing history. We aim to provide you with a highly personalized shopping journey that saves you time and effort, while ensuring you find exactly what you're looking for. </p>
+    <body>
+        <!-- Navigation Bar -->
+        <nav class="navbar">
+            <div class="container">
+                <h1 class="logo"><a href="#">One Stop Shop</a></h1>
+                <ul class="nav-links" id="nav-links">
+                    <li><a href="#hero">Home</a></li>
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#products">Products</a></li>
+                    <li><a href="#testimonials">Testimonials</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
             </div>
-            <div class="feature">
-                <h3>Feature Two</h3>
-                <p>Why search multiple sites when you can find everything you need in one place? From entertainment to education, from software tools to lifestyle products, we offer a comprehensive collection that meets all your needs. Our platform is designed to provide convenience, variety, and quality—all in one location. </p>
+        </nav>
+
+        <!-- Hero Section -->
+        <header class="hero" id="hero">
+            <div class="overlay"></div>
+            <div class="hero-content">
+                <h1>All you need</h1>
+                <p>
+                    Discover entertainment, songs, books, tools and much more.
+                </p>
+                <button class="cta-button">Get Started</button>
             </div>
-            <div class="feature">
-                <h3>Feature Three</h3>
-                <p>Your security is our priority. We use state-of-the-art encryption and security protocols to ensure that your transactions are safe and secure. Our user-friendly interface allows for quick and easy checkout, so you can spend less time worrying and more time enjoying your new purchases.</p>
+        </header>
+
+        <!-- Features Section -->
+        <section class="features" id="features">
+            <h2>Why Choose Us?</h2>
+            <div class="feature-grid">
+                <div class="feature">
+                    <h3>Feature One</h3>
+                    <p>
+                        Discover a shopping experience tailored just for you.
+                        With our advanced recommendation engine, get product
+                        suggestions based on your preferences and browsing
+                        history. We aim to provide you with a highly
+                        personalized shopping journey that saves you time and
+                        effort, while ensuring you find exactly what you're
+                        looking for.
+                    </p>
+                </div>
+                <div class="feature">
+                    <h3>Feature Two</h3>
+                    <p>
+                        Why search multiple sites when you can find everything
+                        you need in one place? From entertainment to education,
+                        from software tools to lifestyle products, we offer a
+                        comprehensive collection that meets all your needs. Our
+                        platform is designed to provide convenience, variety,
+                        and quality—all in one location.
+                    </p>
+                </div>
+                <div class="feature">
+                    <h3>Feature Three</h3>
+                    <p>
+                        Your security is our priority. We use state-of-the-art
+                        encryption and security protocols to ensure that your
+                        transactions are safe and secure. Our user-friendly
+                        interface allows for quick and easy checkout, so you can
+                        spend less time worrying and more time enjoying your new
+                        purchases.
+                    </p>
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Products Section -->
-    <section class="products" id="products">
-        <h2>Our Products</h2>
-        <div class="product-grid">
-            <!-- Game Products -->
-            <div class="product-card">
-                <img src="https://images.unsplash.com/photo-1542751371-adc38448a05e?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Games">
-                <h3>Games</h3>
-                <p>Discover a range of exciting games that will keep you entertained for hours.</p>
-                <button class="buy-button">Buy now starting from Rs. 99</button>
+        <!-- Products Section -->
+        <section class="products" id="products">
+            <h2>Our Products</h2>
+            <div class="product-grid">
+                <!-- Game Products -->
+                <div class="product-card">
+                    <img
+                        src="https://images.unsplash.com/photo-1542751371-adc38448a05e?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        alt="Games"
+                    />
+                    <h3>Games</h3>
+                    <p>
+                        Discover a range of exciting games that will keep you
+                        entertained for hours.
+                    </p>
+                    <button class="buy-button">
+                        Buy now starting from Rs. 99
+                    </button>
+                </div>
+                <!-- Entertainment Products -->
+                <div class="product-card">
+                    <img
+                        src="https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?q=80&w=1548&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        alt="Entertainment"
+                    />
+                    <h3>Entertainment</h3>
+                    <p>
+                        Enjoy a variety of movies, shows, and more with our
+                        entertainment packages.
+                    </p>
+                    <button class="buy-button">
+                        Buy now starting from Rs. 99
+                    </button>
+                </div>
+                <!-- Song Products -->
+                <div class="product-card">
+                    <img
+                        src="https://images.unsplash.com/photo-1470225620780-dba8ba36b745?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        alt="Songs"
+                    />
+                    <h3>Top Songs Collection</h3>
+                    <p>
+                        Listen to the latest and greatest hits from your
+                        favorite artists.
+                    </p>
+                    <button class="buy-button">
+                        Buy now starting from Rs. 99
+                    </button>
+                </div>
+                <!-- Book Products -->
+                <div class="product-card">
+                    <img
+                        src="https://images.unsplash.com/photo-1505063366573-38928ae5567e?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        alt="Books"
+                    />
+                    <h3>Books</h3>
+                    <p>
+                        Explore our collection of bestselling books across
+                        various genres.
+                    </p>
+                    <button class="buy-button">
+                        Buy now starting from Rs. 99
+                    </button>
+                </div>
+                <!-- Podcast Products -->
+                <div class="product-card">
+                    <img
+                        src="https://plus.unsplash.com/premium_photo-1679079455767-1bbb40492d6a?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        alt="Podcasts"
+                    />
+                    <h3>Podcasts</h3>
+                    <p>
+                        Tune in to popular podcasts that cover a wide range of
+                        topics.
+                    </p>
+                    <button class="buy-button">
+                        Buy now starting from Rs. 99
+                    </button>
+                </div>
+                <!-- Software Tools -->
+                <div class="product-card">
+                    <img
+                        src="https://images.unsplash.com/photo-1617777934845-a818fd6e1bcb?q=80&w=1631&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        alt="Software Tools"
+                    />
+                    <h3>Software Tools</h3>
+                    <p>
+                        Find essential software tools that help improve your
+                        productivity.
+                    </p>
+                    <button class="buy-button">
+                        Buy now starting from Rs. 99
+                    </button>
+                </div>
+                <!-- E-learning Courses -->
+                <div class="product-card">
+                    <img
+                        src="https://plus.unsplash.com/premium_photo-1681483495368-2a5ee092c9d4?q=80&w=1465&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        alt="E-learning"
+                    />
+                    <h3>Courses</h3>
+                    <p>
+                        Enroll in top-rated courses to enhance your skills and
+                        knowledge.
+                    </p>
+                    <button class="buy-button">
+                        Buy now starting from Rs. 99
+                    </button>
+                </div>
             </div>
-            <!-- Entertainment Products -->
-            <div class="product-card">
-                <img src="https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?q=80&w=1548&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Entertainment">
-                <h3>Entertainment</h3>
-                <p>Enjoy a variety of movies, shows, and more with our entertainment packages.</p>
-                <button class="buy-button">Buy now starting from Rs. 99</button>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section class="testimonials" id="testimonials">
+            <h2>What Our Users Say</h2>
+            <div class="testimonial-grid">
+                <div class="testimonial">
+                    <p>
+                        "One Stop Shop has truly revolutionized my shopping
+                        experience. From books to entertainment, everything is
+                        just a click away. The personalized recommendations are
+                        spot-on and have saved me so much time!"
+                    </p>
+                    <span>- Ananya Sharma</span>
+                </div>
+                <div class="testimonial">
+                    <p>
+                        "What sets One Stop Shop apart is the ease of use and
+                        the vast array of products. From games to podcasts, I
+                        have discovered so much great content here. A big thumbs
+                        up from me!"
+                    </p>
+                    <span>- Neha Sharma</span>
+                </div>
+                <div class="testimonial">
+                    <p>
+                        "I love the variety and quality of products available
+                        here. The user interface is clean, and navigating
+                        through different sections is super easy. This platform
+                        has everything I need in one place. Highly recommended!"
+                    </p>
+                    <span>- Rohan Patel</span>
+                </div>
             </div>
-            <!-- Song Products -->
-            <div class="product-card">
-                <img src="https://images.unsplash.com/photo-1470225620780-dba8ba36b745?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Songs">
-                <h3>Top Songs Collection</h3>
-                <p>Listen to the latest and greatest hits from your favorite artists.</p>
-                <button class="buy-button">Buy now starting from Rs. 99</button>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact" id="contact">
+            <h2>Contact Us</h2>
+            <form class="contact-form">
+                <input type="text" placeholder="Your Name" required />
+                <input type="email" placeholder="Your Email" required />
+                <input type="tel" placeholder="Your Phone Number" required />
+                <textarea placeholder="Your Message" required></textarea>
+                <button type="submit" class="submit-button">Submit</button>
+            </form>
+        </section>
+
+        <!-- Privacy Policy Section -->
+        <section id="privacy-policy" class="policy-section">
+            <h2>Privacy</h2>
+            <p>
+                Privacy Policy This Privacy Policy describes how your personal
+                information is collected, used, and shared when you visit or
+                make a purchase from wapinstitute.com Personal information When
+                you visit the Site, we automatically collect certain information
+                about your device, including information about your web browser,
+                IP address, time zone, and some of the cookies that are
+                installed on your device. Additionally, as you browse the Site,
+                we collect information about the individual web pages or
+                products that you view, what websites or search terms referred
+                you to the Site, and information about how you interact with the
+                Site. We refer to this automatically-collected information as
+                Device Information. We collect Device Information using the
+                following technologies Cookies Cookies are text files with small
+                pieces of data — like a username and password — that are used to
+                identify your computer as you use a computer network. Local
+                Storage LocalStorage is a data storage type of web storage. This
+                allows the JavaScript sites and apps to store and access the
+                data without any expiration date Session Storage The
+                sessionStorage object stores data only for a session. It means
+                that the data stored in the sessionStorage will be deleted when
+                the browser is closed We use the Order Information that we
+                collect generally to fulfill any orders placed through the Site
+                (including processing your payment information, arranging for
+                shipping, and providing you with invoices and/or order
+                confirmations). Additionally, we use this Order Information to:
+                Communicate with you Screen our orders for potential risk or
+                fraud When in line with the preferences you have shared with us,
+                provide you with information or advertising relating to our
+                products or services We use the Device Information that we
+                collect to help us screen for potential risk and fraud (in
+                particular, your IP address), and more generally to improve and
+                optimize our Site (for example, by generating analytics about
+                how our customers browse and interact with the Site, and to
+                assess the success of our marketing and advertising campaigns).
+                We use your account information that we collect generally to
+                generate statistics for you, and provide personalized roadmaps.
+                Additionally, we use this information to: Communicate with you
+                When in line with the preferences you have shared with us,
+                provide you with information or advertising relating to our
+                products or services Contact us If you have questions, or if you
+                would like to make a complaint, please contact us by e‑mail at
+                aayushhp17@gmail.com
+            </p>
+        </section>
+
+        <!-- Terms Section -->
+        <section id="terms" class="policy-section">
+            <h2>Terms of Service</h2>
+            <p>
+                Terms And Conditions This Privacy Policy describes how your
+                personal information is collected, used, and shared when you
+                visit or make a purchase from wapinstitute.com Personal
+                information When you visit the Site, we automatically collect
+                certain information about your device, including information
+                about your web browser, IP address, time zone, and some of the
+                cookies that are installed on your device. Additionally, as you
+                browse the Site, we collect information about the individual web
+                pages or products that you view, what websites or search terms
+                referred you to the Site, and information about how you interact
+                with the Site. We refer to this automatically-collected
+                information as Device Information. We collect Device Information
+                using the following technologies Cookies Cookies are text files
+                with small pieces of data — like a username and password — that
+                are used to identify your computer as you use a computer
+                network. Local Storage LocalStorage is a data storage type of
+                web storage. This allows the JavaScript sites and apps to store
+                and access the data without any expiration date Session Storage
+                The sessionStorage object stores data only for a session. It
+                means that the data stored in the sessionStorage will be deleted
+                when the browser is closed We use the Order Information that we
+                collect generally to fulfill any orders placed through the Site
+                (including processing your payment information, arranging for
+                shipping, and providing you with invoices and/or order
+                confirmations). Additionally, we use this Order Information to:
+                Communicate with you Screen our orders for potential risk or
+                fraud When in line with the preferences you have shared with us,
+                provide you with information or advertising relating to our
+                products or services We use the Device Information that we
+                collect to help us screen for potential risk and fraud (in
+                particular, your IP address), and more generally to improve and
+                optimize our Site (for example, by generating analytics about
+                how our customers browse and interact with the Site, and to
+                assess the success of our marketing and advertising campaigns).
+                We use your account information that we collect generally to
+                generate statistics for you, and provide personalized roadmaps.
+                Additionally, we use this information to: Communicate with you
+                When in line with the preferences you have shared with us,
+                provide you with information or advertising relating to our
+                products or services Contact us If you have questions, or if you
+                would like to make a complaint, please contact us by e‑mail at
+                aayushhp17@gmail.com
+            </p>
+        </section>
+
+        <!-- Refund Policy Section -->
+        <section id="refund-policy" class="policy-section">
+            <h2>Refund Policy</h2>
+            <p>
+                Refund Policy We offer a full money-back guarantee for all
+                purchases made on our website. If you are not satisfied with the
+                product that you have purchased from us, you can get your money
+                back no questions asked.You are eligible for a full
+                reimbursement within 7 calendar days of your purchase. After the
+                7-day period you will no longer be eligible and will not be able
+                to receive a refund. We encourage our customers to try the
+                product (or service) in the first one week after their purchase
+                to ensure it fits your needs. If you have any additional
+                questions or would like to request a refund, feel free to
+                contact us at aayushhp17@gmail.com or call us +91 8840475949.
+            </p>
+        </section>
+        <!-- About Us Section -->
+        <section id="about-us" class="policy-section">
+            <div class="container">
+                <h2>About Us</h2>
+                <p>
+                    Welcome to One Stop Shop, your ultimate destination for all
+                    your shopping needs! We are committed to providing a
+                    seamless and enjoyable shopping experience for our users,
+                    offering a wide variety of products, including books,
+                    entertainment, games, software tools, e-learning courses,
+                    and more—all in one convenient platform. Our journey began
+                    with a simple idea: to create a platform where users can
+                    easily access everything they need, without the hassle of
+                    visiting multiple websites or stores. Over the years, we
+                    have grown to become a trusted name in the online shopping
+                    world, thanks to our commitment to quality, customer
+                    satisfaction, and innovation. At One Stop Shop, we believe
+                    in making things easy and accessible for our customers. We
+                    are constantly expanding our product range, enhancing user
+                    experience, and improving our customer service to ensure
+                    that every shopping experience is a pleasant one. Our
+                    Physical Address We are not just an online presence! You can
+                    also visit us at our physical location: Shop No, 17, Lal
+                    Bahadur Shastri Rd, Rambag Colony, Sadashiv Peth, Pune,
+                    Maharashtra.
+                </p>
+
+                <h2>Our Mission</h2>
+                <p>
+                    Our mission is to create a user-friendly platform where our
+                    visitors can find relevant information, services, and
+                    products that meet their needs. We strive for excellence in
+                    every project we undertake and focus on building long-term
+                    relationships with our users.
+                </p>
+
+                <h2>Our Vision</h2>
+                <p>
+                    We envision a world where quality information and services
+                    are easily accessible to everyone. Our goal is to expand our
+                    reach and impact, continuously improving our platform to
+                    serve our community better.
+                </p>
+
+                <h2>Our Team</h2>
+                <p>
+                    Our team is composed of experienced professionals passionate
+                    about what they do. From developers to content creators,
+                    each member plays a vital role in ensuring our platform
+                    remains reliable and user-friendly.
+                </p>
+
+                <p>
+                    Thank you for choosing our website. We hope you have a great
+                    experience!
+                </p>
             </div>
-            <!-- Book Products -->
-            <div class="product-card">
-                <img src="https://images.unsplash.com/photo-1505063366573-38928ae5567e?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Books">
-                <h3>Books</h3>
-                <p>Explore our collection of bestselling books across various genres.</p>
-                <button class="buy-button">Buy now starting from Rs. 99</button>
+        </section>
+
+        <!-- Footer Section -->
+        <footer class="footer" id="footer">
+            <div class="footer-container">
+                <p>&copy; 2024 One Stop Shop. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="#about-us">About Us</a> |
+                    <a href="#privacy-policy">Privacy</a> |
+                    <a href="#terms">Terms & Conditions</a> |
+                    <a href="#refund-policy">Cancellation & Refund Policy</a>
+                </div>
+                <div class="social-icons">
+                    <a href="#" class="social-icon"
+                        ><i class="fab fa-facebook-f"></i
+                    ></a>
+                    <a href="#" class="social-icon"
+                        ><i class="fab fa-twitter"></i
+                    ></a>
+                    <a href="#" class="social-icon"
+                        ><i class="fab fa-instagram"></i
+                    ></a>
+                    <a href="#" class="social-icon"
+                        ><i class="fab fa-linkedin-in"></i
+                    ></a>
+                </div>
             </div>
-            <!-- Podcast Products -->
-            <div class="product-card">
-                <img src="https://plus.unsplash.com/premium_photo-1679079455767-1bbb40492d6a?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Podcasts">
-                <h3>Podcasts</h3>
-                <p>Tune in to popular podcasts that cover a wide range of topics.</p>
-                <button class="buy-button">Buy now starting from Rs. 99</button>
-            </div>
-            <!-- Software Tools -->
-            <div class="product-card">
-                <img src="https://images.unsplash.com/photo-1617777934845-a818fd6e1bcb?q=80&w=1631&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Software Tools">
-                <h3>Software Tools</h3>
-                <p>Find essential software tools that help improve your productivity.</p>
-                <button class="buy-button">Buy now starting from Rs. 99</button>
-            </div>
-            <!-- E-learning Courses -->
-            <div class="product-card">
-                <img src="https://plus.unsplash.com/premium_photo-1681483495368-2a5ee092c9d4?q=80&w=1465&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="E-learning">
-                <h3>Courses</h3>
-                <p>Enroll in top-rated courses to enhance your skills and knowledge.</p>
-                <button class="buy-button">Buy now starting from Rs. 99</button>
-            </div>
-        </div>
-    </section>
-
-    <!-- Testimonials Section -->
-    <section class="testimonials" id="testimonials">
-        <h2>What Our Users Say</h2>
-        <div class="testimonial-grid">
-            <div class="testimonial">
-                <p>"One Stop Shop has truly revolutionized my shopping experience. From books to entertainment, everything is just a click away. The personalized recommendations are spot-on and have saved me so much time!"</p>
-                <span>- Ananya Sharma</span>
-            </div>
-            <div class="testimonial">
-                <p>"What sets One Stop Shop apart is the ease of use and the vast array of products. From games to podcasts, I have discovered so much great content here. A big thumbs up from me!"</p>
-                <span>- Neha Sharma</span>
-            </div>
-            <div class="testimonial">
-                <p>"I love the variety and quality of products available here. The user interface is clean, and navigating through different sections is super easy. This platform has everything I need in one place. Highly recommended!"</p>
-                <span>- Rohan Patel</span>
-            </div>
-        </div>
-    </section>
-
-    
-
-<!-- Contact Section -->
-    <section class="contact" id="contact">
-        <h2>Contact Us</h2>
-        <form class="contact-form">
-            <input type="text" placeholder="Your Name" required>
-            <input type="email" placeholder="Your Email" required>
-            <input type="tel" placeholder="Your Phone Number" required>
-            <textarea placeholder="Your Message" required></textarea>
-            <button type="submit" class="submit-button">Submit</button>
-        </form>
-    </section>
-
-     <!-- Privacy Policy Section -->
-    <section id="privacy-policy" class="policy-section">
-        <h2>Privacy</h2>
-        <p>Privacy Policy
-This Privacy Policy describes how your personal information is collected, used, and shared when you visit or make a purchase from wapinstitute.com
-Personal information
-When you visit the Site, we automatically collect certain information about your device, including information about your web browser, IP address, time zone, and some of the cookies that are installed on your device. Additionally, as you browse the Site, we collect information about the individual web pages or products that you view, what websites or search terms referred you to the Site, and information about how you interact with the Site. We refer to this automatically-collected information as Device Information.
-We collect Device Information using the following technologies
-Cookies
-Cookies are text files with small pieces of data — like a username and password — that are used to identify your computer as you use a computer network.
-
-Local Storage
-LocalStorage is a data storage type of web storage. This allows the JavaScript sites and apps to store and access the data without any expiration date
-
-Session Storage
-The sessionStorage object stores data only for a session. It means that the data stored in the sessionStorage will be deleted when the browser is closed
-
-We use the Order Information that we collect generally to fulfill any orders placed through the Site (including processing your payment information, arranging for shipping, and providing you with invoices and/or order confirmations). Additionally, we use this Order Information to:
-Communicate with you
-Screen our orders for potential risk or fraud
-When in line with the preferences you have shared with us, provide you with information or advertising relating to our products or services
-We use the Device Information that we collect to help us screen for potential risk and fraud (in particular, your IP address), and more generally to improve and optimize our Site (for example, by generating analytics about how our customers browse and interact with the Site, and to assess the success of our marketing and advertising campaigns). We use your account information that we collect generally to generate statistics for you, and provide personalized roadmaps. Additionally, we use this information to:
-Communicate with you
-When in line with the preferences you have shared with us, provide you with information or advertising relating to our products or services
-Contact us
-If you have questions, or if you would like to make a complaint, please contact us by e‑mail at aayushhp17@gmail.com</p>
-    </section>
-
-    <!-- Terms Section -->
-    <section id="terms" class="policy-section">
-        <h2>Terms of Service</h2>
-        <p>Terms And Conditions
-This Privacy Policy describes how your personal information is collected, used, and shared when you visit or make a purchase from wapinstitute.com
-Personal information
-When you visit the Site, we automatically collect certain information about your device, including information about your web browser, IP address, time zone, and some of the cookies that are installed on your device. Additionally, as you browse the Site, we collect information about the individual web pages or products that you view, what websites or search terms referred you to the Site, and information about how you interact with the Site. We refer to this automatically-collected information as Device Information.
-We collect Device Information using the following technologies
-Cookies
-Cookies are text files with small pieces of data — like a username and password — that are used to identify your computer as you use a computer network.
-
-Local Storage
-LocalStorage is a data storage type of web storage. This allows the JavaScript sites and apps to store and access the data without any expiration date
-
-Session Storage
-The sessionStorage object stores data only for a session. It means that the data stored in the sessionStorage will be deleted when the browser is closed
-
-We use the Order Information that we collect generally to fulfill any orders placed through the Site (including processing your payment information, arranging for shipping, and providing you with invoices and/or order confirmations). Additionally, we use this Order Information to:
-Communicate with you
-Screen our orders for potential risk or fraud
-When in line with the preferences you have shared with us, provide you with information or advertising relating to our products or services
-We use the Device Information that we collect to help us screen for potential risk and fraud (in particular, your IP address), and more generally to improve and optimize our Site (for example, by generating analytics about how our customers browse and interact with the Site, and to assess the success of our marketing and advertising campaigns). We use your account information that we collect generally to generate statistics for you, and provide personalized roadmaps. Additionally, we use this information to:
-Communicate with you
-When in line with the preferences you have shared with us, provide you with information or advertising relating to our products or services
-Contact us
-If you have questions, or if you would like to make a complaint, please contact us by e‑mail at aayushhp17@gmail.com</p>
-    </section>
-
-    <!-- Refund Policy Section -->
-    <section id="refund-policy" class="policy-section">
-        <h2>Refund Policy</h2>
-        <p>Refund Policy
-We offer a full money-back guarantee for all purchases made on our website. If you are not satisfied with the product that you have purchased from us, you can get your money back no questions asked.You are eligible for a full reimbursement within 7 calendar days of your purchase. After the 7-day period you will no longer be eligible and will not be able to receive a refund. We encourage our customers to try the product (or service) in the first one week after their purchase to ensure it fits your needs. If you have any additional questions or would like to request a refund, feel free to contact us at aayushhp17@gmail.com or call us +91 8840475949.</p>
-    </section>
-     <!-- About Us Section -->
-    <section id = "about-us" class="policy-section">
-    <div class="container">
-        <h2>About Us</h2>
-        <p>Welcome to Our Website. We are committed to providing you with high-quality services and information. Our team is dedicated to ensuring your satisfaction and delivering value in every aspect of our offerings.</p>
-        
-        <h2>Our Mission</h2>
-        <p>Our mission is to create a user-friendly platform where our visitors can find relevant information, services, and products that meet their needs. We strive for excellence in every project we undertake and focus on building long-term relationships with our users.</p>
-
-        <h2>Our Vision</h2>
-        <p>We envision a world where quality information and services are easily accessible to everyone. Our goal is to expand our reach and impact, continuously improving our platform to serve our community better.</p>
-
-        <h2>Our Team</h2>
-        <p>Our team is composed of experienced professionals passionate about what they do. From developers to content creators, each member plays a vital role in ensuring our platform remains reliable and user-friendly.</p>
-        
-        <p>Thank you for choosing our website. We hope you have a great experience!</p>
-    </div>
-</section>
-
- <!-- Footer Section -->
-    <footer class="footer" id="footer">
-        <div class="footer-container">
-            <p>&copy; 2024 One Stop Shop. All rights reserved.</p>
-            <div class="footer-links">
-                <a href="#about-us">About Us</a> | 
-                <a href="#privacy-policy">Privacy</a> | 
-                <a href="#terms">Terms & Conditions</a> | 
-                <a href="#refund-policy">Cancellation & Refund Policy</a>
-            </div>
-            <div class="social-icons">
-                <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
-                <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
-                <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
-                <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
-            </div>
-        </div>
-    </footer>
-</body>
-
+        </footer>
+    </body>
 </html>
